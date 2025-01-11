@@ -12,4 +12,385 @@
         <tag>Deep learning</tag>
       </tags>
   </entry>
+  <entry>
+    <title>台大資工二上修課心得</title>
+    <url>/2025/01/11/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5%E4%BA%8C%E4%B8%8A%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>這學期開始處理數學雙主修的學分，因此有一半的必修是數學系，一半是資工系。 這學期一共修8堂課，其中有6堂是必修，另外2堂是選修(偏微分方程一, 機器學習)。<br>說實話我自己都覺得有點瘋，在資工系都是追求GPA 4.3的風氣之下這種行爲近乎自殺。我會去選這些課的理由如下：(理由 1)</p>
+<ol>
+<li>我大一的時候有寫一個想要修的課的list，其中就包含：數學系線性代數, 抽象代數, 自動機 (被RZ蠱惑), 機器學習, PDE</li>
+<li>這學期開始的時候受到一些不可抗力：<ol>
+<li>機器學習明年會不開，我被飢餓行銷到了，而且大二還不會機器學習感覺很遜</li>
+<li>計網我今年有機會修單班(周承複)，如果明年我就會必帶雙班，會比較難</li>
+<li>今年PDE(研究所)是由陳俊全開授，我上學期分導二拿A+，所以我一定要到。而且他上學期幹話講太多了，很難看出他的專業項目</li>
+</ol>
+</li>
+<li>必帶學分我不想退，也沒有道理(?)要退</li>
+<li>系統程式設計我大一下要選OS的時候就看得差不多了，暑假也看了課本做複習</li>
+<li>我暑假的時候就在看Dummit &amp; Foote (大概到chap 4.4)</li>
+</ol>
+<h3 id="修課清單"><a href="#修課清單" class="headerlink" title="修課清單"></a>修課清單</h3><ul>
+<li>資工系必修<ul>
+<li>系統程式設計 <em>System programming</em></li>
+<li>演算法設計與分析 <em>Algorithm Design and Analysis</em></li>
+<li>自動機與形式語言 <em>Automata and Regular language</em></li>
+<li>計算機網路 <em>Computer Networking</em></li>
+</ul>
+</li>
+<li>數學系必修<ul>
+<li>線性代數一 <em>Linear Algebra (I)</em></li>
+<li>代數導論一 <em>Introduction to Algebra (I)</em></li>
+</ul>
+</li>
+<li>資工系選修<ul>
+<li>機器學習 <em>Machine learning</em></li>
+</ul>
+</li>
+<li>數學系選修<ul>
+<li>偏微分方程一 <em>Partial Differiential Equations(I)</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h3><p>說實話我原本沒有打算機器學習跟計網的，但誠如 (理由 1)-2，我權衡之下決定要8堂課一共26學分都修。其實現在仔細想想很多課的真實學分可能都超過26學分<br>，理論上開學後的一邊上課+課後複習準備考試等等的時間一定會超支，但因爲我實際上不需要花太多時間學習SP, 線代, 代導，所以真正的loading其實只有寫作業<br>，然後剩下的我就想 “頂着幹，做中學”，期末真的頂不住再退選。剛開始這個策略真的有work，然後剛暑假完精力充沛每一堂課去都沒差，但有幾個致命的問題：(理由 2)</p>
+<ol>
+<li>代數導論教授 (李庭諭教授) 不按正常的代數課的了教學進度 (或者我孤漏寡聞)，導致我理想上的loading不會work</li>
+<li>前期SP還沒開始程式作業，程式作業基本上就是這堂課的loading，所以真正壓低的是期考準備的loading</li>
+<li>正常一個禮拜沒辦法平均分攤給所有的課，如果有任何作業是做到超時的話就會延後到後面的所有東西 (Queuing theory 哈)</li>
+<li>很多課都不均攤他的作業，越接近期末才出作業或考試才定下來</li>
+</ol>
+<p>所以到第6週之後就跟地獄一樣，每天行事曆都是滿的，然後到第8週就開始瘋狂趕死線，16週連考4週，17週狂趕Final project。</p>
+<p>以下課程會以3個指標作爲依據：</p>
+<ul>
+<li>甜度</li>
+<li>涼度</li>
+<li>會不會再修</li>
+</ul>
+<h1 id="資工系必修"><a href="#資工系必修" class="headerlink" title="資工系必修"></a>資工系必修</h1><h2 id="系統程式設計"><a href="#系統程式設計" class="headerlink" title="系統程式設計"></a>系統程式設計</h2><ul>
+<li>授課教授 : 黎士瑋 (真實授課導師 : 鄭卜壬)</li>
+<li>學分 ： 3 </li>
+<li>甜度：6&#x2F;10 (每次都有custom test的情況)</li>
+<li>涼度 : 2&#x2F;10 </li>
+<li>會不會再修 : 狗都不修</li>
+<li>課本 : Advanced Programming in the Unix Environment (APUE), by W. Richard Stevens and Steven A. Rago</li>
+<li>評分方式：<ul>
+<li>Programming assignments (4份，每份都有要上傳到github repo的程式+手寫的report): 各 8 %</li>
+<li>Handwritten assignments (4份): 各 2%</li>
+<li>期中考: 30 %</li>
+<li>期末考: 30 %</li>
+</ul>
+</li>
+<li>修課心得 :<br>關於Thisway課堂教學的部分我無法給評價，我除了期中跟期末會出席之外沒來過一次。我大一下就是看鄭卜壬(a.k.a PJ)的2021的網課，我覺得PJ很好笑又有趣<br>，他會用很多荒謬的比喻讓你記起來，例如：政府會在你家開個房間然後放你的資料然後把門給鎖了，這種毫無道理的比喻，我挺喜歡的。而且從第一堂課的Os concept<br>就可以感受到PJ對課本內容的獨特理解，他對OS, 計概, Data structure, 計結的理解會綜合到枯燥的課程裏面。基本上自學課本就會覺得這本書就是一個百科大全（man page, API書)，所以很需要對OS的理解才有辦法學好。不同於很多人對這堂課的評價是一個背科，PJ想傳達的就是這是一個理解的科目，需要真實的理解才有辦法在自己寫code的情況下自己 identify 哪裡出現了deadlock或race condition。因爲我這學期同時修計網在做socket programming project更能瞭解爲啥需要這樣理解SP。兩班課程規劃大致cover:<ul>
+<li>Os concept</li>
+<li>Buffer and unbuffer I&#x2F;O </li>
+<li>File System</li>
+<li>Process concept&#x2F;control</li>
+<li>Signal </li>
+<li>Threading</li>
+<li>Process Environment<br>由於今年兩次颱風+一次國慶所以基本上今年必修都只上了11週的課（有點可悲），所以complie的部分就沒有多琢磨與考。根據ntu cool上的內容， Thisway班的後半才有錄影。畢竟叫 System <strong>Programming</strong>所以重點還是要寫programming，一般來講code會給一些寫好的骨架，會需要把對應的功能實作好(跟往年一樣)。大一太早退計程的話或對C programming不太熟的應該會蠻地獄的，基本上都要寫200多行+助教寫的大概會到400行左右。4 次programming如下，內容自己看連接:<ul>
+<li><a href="https://hackmd.io/@Qb8FmlY1Tbu8vrNi5uQ1Dg/HytkthL3C">socket programming</a></li>
+<li><a href="https://hackmd.io/@rwGDMkdFT2m4A250yFDLPg/BJURLjchC">IPC</a></li>
+<li><a href="https://hackmd.io/@seantsao00/sp2024_hw3">Signal stimulate threading</a></li>
+<li><a href="https://hackmd.io/@kcwayne/sp2024_hw4#1224">Threading</a><br>難度的話我覺得 IPC&gt;socket programming&gt;Threading&gt;Signal stimulate threading。因爲三次放假所以Threading放在17週且內容上也比較少，但結果是我最後一次大意了沒有閃memory leak也被狂扣，我到寫CN socket programming phase 2才發現我寫法會有thread殺不乾淨的情況，但那時候已經截止了所以我作業沒拿滿。IPC哪次是一個喜歡Ina的助教出的，挺容易做IPC的方式不好導致TLE的，而且我被TA hour助教講的話搞到，他跟我講他的code大概只寫了100多行只要重複利用就可以讓code變乾淨，然後我就把一堆功能寫在一起然後就變得可讀性很差，而且通常題目敘述都超長，稍微哪裏理解有問題都有可能會火爆炸開。IPC我星期日開始寫下個禮拜星期二早上才在工作站上ccustom test全過，這導致我壓縮到其他的進度。Socket programming就是初見殺，因爲兩邊的老師都很有限度的教Socket API所以可能對TPC&#x2F;IP不是很理解的同學可能會有點困難，我大概寫了4個晚上左右。提個外話就是我programming不是很強，至少我認識不少同學是好幾個作業都之花一天就寫完了，所以時間參考參考就好w。只是不知名原因一到繳交日期附近新管就會塞滿一堆人趕作業，工作站\tmp2也會跑到I&#x2F;O超時會錯，要避免這個狀況最好修課的時候就有隊友或者你自己就是那個大腿(e.g.鄭XX, 謝X, 王X)。<strong>最好提早寫完開始做QA比較容易寫出正確的code</strong>。另外張迪善助教(喜歡Ina那個)真的對同學超好，有困難就會相助，有別於以往SP TA的評價都很糟糕。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>如果拿的到考古就會發現Thisway跟PJ的考試方向十分的不同，PJ比較注重觀念的正確所以那種考race condition, deadlock的情景題組比較多，某種程度上可以說PJ考得比較難。我實際考的是Thisway的卷子，會有多選跟問答，基本上就是很背誦，可以帶一張A4雙面大抄 (抄考古應該只會中Everything is a file那題) ，你需要記得某些事就會答對，會有一些需要coding的題目但整體不是很難，時常考考古但今年期中沒有考很多，然後今年的期中考古不準外流(聰明的你應該知道這代表什麼，我們在延了一週期考)。整體而言我覺得考卷出的不是很好，時常會有英文詞不答其意的選項(2022考古就會發現不少)，題目愛使用開放式問答卻限定寫的人要寫到什麼程度(i.e. 有沒在題目的grade criteria)，期中讓我最不滿的是他出在考卷的壓軸題，題目解答居然給用fcntl實作pwrite對，正常都應該知道這是advisory lock依舊會有race condition，正確實作應該是重新open那個檔案，類似的情況不勝枚舉，讓他們的credibility下降很多。我只能說:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">這是一個不公平的考試啊</span><br><span class="line">欸笑死人欸</span><br><span class="line">他剛剛扣我我有錯嗎</span><br><span class="line">我一點都沒有錯欸</span><br><span class="line">欸你們助教是怎麼判的啊</span><br><span class="line">欸不是</span><br><span class="line">我一步都沒有錯然後判我錯喔</span><br><span class="line">用advisory lock的贏喔</span><br><span class="line">有沒有邏輯啊不是啊</span><br><span class="line">我用open開一個新檔案 這樣算我輸喔</span><br><span class="line">他扣我 我一步都沒有錯ㄟ</span><br><span class="line">啊這樣算我錯喔</span><br><span class="line">你們助教怎麼判的啦</span><br><span class="line">好啦 我要回家了啦</span><br><span class="line">學分給你啦 乞丐</span><br></pre></td></tr></table></figure>
+<p>期末17週公佈的時候聽說還有人去大吵特吵分數，不過最後給分挺甜的聽說84的還有A。</p>
+<h2 id="演算法設計與分析"><a href="#演算法設計與分析" class="headerlink" title="演算法設計與分析"></a>演算法設計與分析</h2><ul>
+<li>授課老師：呂學一</li>
+<li>學分 ： 3 </li>
+<li>甜度：8&#x2F;10</li>
+<li>涼度 : 7&#x2F;10 </li>
+<li>會不會再修 : 沒有更好的選擇所以會</li>
+<li>課本 : Introduction to Algorithms, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein</li>
+<li>投影片：呂學一不準外流的簡報 (<a href="https://www.ptt.cc/bbs/NTU/M.1664488307.A.70B.html">詳細的beef</a>)</li>
+<li>評分方式：<ul>
+<li>第一次定期考: 33.3 %</li>
+<li>第二次定期考: 33.3 %</li>
+<li>第三次定期考: 33.3 %</li>
+</ul>
+</li>
+<li>修課心得: (尚未公佈成績 XD)</li>
+</ul>
+<h2 id="計算機網路"><a href="#計算機網路" class="headerlink" title="計算機網路"></a>計算機網路</h2><ul>
+<li>授課老師：周承覆</li>
+<li>學分 : 3 </li>
+<li>甜度 : 9.8&#x2F;10 </li>
+<li>涼度 ： 5&#x2F;10 </li>
+<li>會不會再修 : 下輩子一定再修</li>
+<li>課本 ： Computer Networking a top-down approach, 8th edition</li>
+<li>投影片：課本作者投影片加一點點自己的改動</li>
+<li>評分方式 ：<ul>
+<li>作業(Homework *4, paper reading * 1)：20 %</li>
+<li>Socket programming Project phase 1 &amp; 2: 35 % ((40+65)&#x2F;100 with bonus 25)</li>
+<li>Midterm : 20 %</li>
+<li>Final : 25 %</li>
+<li>Class participation : 5 %</li>
+</ul>
+</li>
+<li>修課心得 :<br>  我個人感覺單班計網是大甜課，周承覆教授看起來就像公園很有精神的阿北，上課基本上follow課本作者Jim Kurose的簡報，所以可能教學上有些無聊，教師說話上時常重複說<a href="/img/repeatedly.png">某句話</a>，有鑑於我這學期的loading我後半學期就選擇看Jim Kurose的課。他的課程算是挺知名的<a href="https://www.youtube.com/playlist?list=PLm556dMNleHc1MWN5BX9B2XkwkNE2Djiu">網課</a>，他也有上過<a href="https://www.youtube.com/watch?v=0EqKnvzo3no&t=298s">Wired</a>教小朋友，所以算是挺知名的人物吧。教授會自己補充Banyan Networking還有TCP throughput formula，基本上有寫考古一定會寫到。由於現在壓縮成16週基本上教不到Link layer，然後學期前面可能教授比較沒有進度壓力，教學進度大致如下:<ul>
+<li>1-5 week chap 1&#x2F; Paper reading</li>
+<li>6-7 week chap 2&#x2F; Hw1 </li>
+<li>8 week Midterm</li>
+<li>9-11 week chap 3&#x2F; Hw2</li>
+<li>12-13 week chap 4&#x2F; HW3 </li>
+<li>14 week chap 5 routing algorithm +guest lecture&#x2F; Hw4 </li>
+<li>15 week guest lecture<br>後半學期有明顯感覺到一點點要飆車的意味。Paper reading 應該會是一篇<a href="http://ccr.sigcomm.org/archive/1995/jan95/ccr-9501-clark.pdf">簡介Internet的發展</a>，還蠻有趣的很值得一讀，對剛開始的人很多概念會有點陌生，但很精準的貫穿整個課程，基本上不要寫太差就會拿到分。一共有四個Homework，基本上就是從課本抓習題出來考大家，作業批改基本上就是有寫有分，不會刁難。我可能是因爲之前學SP的時候有特別學一些socket programming所以對計算機網路的原理特別感興趣，期考跟作業會考一些簡單的機率題，然後會問你FedEx跟上傳檔案誰比較快。計網有趣的地方是他會一直提到以前學過的概念:</li>
+<li>Chapter 1 講原理的時候會提到一些Queuing theory相關的概念(期考也會出)，這章節有種普通物理的感覺，跟Haliday 上面的題目挺像</li>
+<li>Chapter 2 HTTP&#x2F;P2P的時候會提到SP atomic的概念還有pipelining</li>
+<li>Chapter 3 介紹設計protocol的時候會用FSM然後GO BACK N的原理是用sliding window</li>
+<li>Chapter 4 Switching fabric 可以是data bus&#x2F;memory&#x2F;crossbar用到一些平行化的概念</li>
+<li>Chapter 5 會介紹routing algorithm 如Dijkstra, Bellman-Ford<br>而且每學一點就更能夠理解自己在使用網路如何運作 (SP作者最知名的書TCP&#x2F;IP illustrate在講這些東西，目前還沒空讀)。<br>Final 跟 Midterm前會公佈近年考古題，意味着很多考古題必考 (網路上可以找到遠古考題)，如果期考的時候不把自己搞太忙有寫考古就會考得不錯。考古題以外的基本上就是課本習題，但課本習題很多又雜，要刷的話要想是否需要付出這麼大的成本因爲A+率挺高 (不過課本也是有很多有趣的理論題)。<br>Project的話這次是要做一個chat room，期中會需要教一次作業Phase 1，大致就是做好能夠登錄登出的功能，基本上會的東西在SP都學過了，我Phase 1 有參考APUE的一些進階做一些congestion control的方法(演算法？)，需要把demo影片上傳到youtube上。Phase 2 的話在期末，需要實作 Mutithreading server, <strong>real time</strong> chat room, file transfer 跟 audio&#x2F;video transfer，基本上大多SP都教過特別適合跟SP一起修，剛好期末又在教thread pool。助教人都超好會考慮到同學困難時常延期作業，且批改標準是只要功能跟說明清楚就好，不會有judge之類的，基本上寫個三天就會寫完。好課一生推，但要有辦法加簽到，基本上他會瘋狂勸退，然後大二的今年只抽中三個，然後轉班的好像沒什麼聽說。</li>
+</ul>
+</li>
+</ul>
+<h2 id="自動機與形式語言"><a href="#自動機與形式語言" class="headerlink" title="自動機與形式語言"></a>自動機與形式語言</h2><ul>
+<li>授課老師：林忠瑋</li>
+<li>學分 ： 3 </li>
+<li>甜度：7.5&#x2F;10</li>
+<li>涼度 : 9&#x2F;10 </li>
+<li>會不會再修 : 不會</li>
+<li>課本 : Introduction to the Theory of Computation by Michael Sipser</li>
+<li>投影片：自製投影片+錄影(<strong>沒有剪輯且全英文</strong>)</li>
+<li>評分方式：<ul>
+<li>第一次定期考: 30 %</li>
+<li>第二次定期考: 30 %</li>
+<li>第三次定期考: 40 %</li>
+</ul>
+</li>
+<li>修課心得:<br>  我會修這門課除了被蠱惑之外，上學期我修林中緯的DSDL (非常好課)被Finite state machine深深吸引所以想修他的班，眾所皆知林忠緯的教學在資工系是S tier，加上DSDL擁有影片剪輯與完全不用到課堂的設計，既甜又香。自動機不同於DSDL是<strong>會切等地</strong>的課，而且由於這是林忠緯第二次教這門課，並沒有像DSDL一樣多的考古，加上林忠緯的考題常常出現一些小XX的題目 (例如：1不能一個set, Alphabet 要是finite之類的(課本寫在序章)) 所以其實並有沒特別友善。由於林忠緯不是自動機專業的，他無法提供很多計算理論的概念跟考很酷的數學題，必須要多做課本習題才能夠學到。本課程全部由英文授課，雖然教授曾經在Berkley當過TA，但他英文並不到十分流利，第二年教學有明顯感受到老師的口說有進步。教授的考卷前半部分基本上就是很基礎（基礎不見得簡單）的題目，然後最後兩題會比較難 (a.k.a 防破臺題)。大多數修課同學都看錄好的影片，會比較有效率，且因爲沒花什麼時間停修成本也不大。我在DSDL的時候就對FSM特別感興趣，知道自動機是用這麼mathematical的方式更是，在學習的過程中我覺得林忠緯較少說明那些mathematical object的意義，不是因爲這些理論沒有實際的application，是因爲他沒有傳遞這些東西的感動。當我在其他參考書學到Turing machine 是 undecidable的停機問題的時候，我覺得感受到的是驚喜與感動，因爲他用意想不到的方式解釋了哥德爾不完備定理。我覺得只有真正理解計算理論的人才有辦法講出爲什麼他重要，所以很大程度課本跟教授把這些解釋權 (直觀) 留給聽&#x2F;讀者。表面上這堂課使用着正規的數學符號，然而證明都寫的十分不嚴謹，且由於16週的關係有許多章節是沒有教的，是故無法提供一個很完整的教學。第一堂課教授就講了這是校友投票最無用的課程之一，其實對大多數成爲軟體工程的同學，這課就是刷GPA的課。所以這門課其實開在系上當選修或和數學系一起合開其實是更好的，就像數學家John Conway也發表了許多計算理論的文章，或者<a href="https://pdf.sciencedirectassets.com/271586/1-s2.0-S0024379500X03989/1-s2.0-S0024379596900063/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj//////////wEaCXVzLWVhc3QtMSJHMEUCIFY57CBdoGFPteIa3sPH0cPRFUsnKdSMsGtrIPypoIddAiEAwfIjBXqhc865SSVGBjyeyrq8Rh85PUEty6U6ziYJQZwqvAUIwf//////////ARAFGgwwNTkwMDM1NDY4NjUiDLLh5/sBO/qrbJ+C6CqQBQMKwtScFeo281DpBV0eIIyrn7d6/qhDbc8BtelCuf4HYyjMGNnk6qIwHBXfTKenoDVNoAmowT8IbCMwQ2D7rpw9OeflYJ6QOleWd+V5xJOOH7NTOH53NCCvEJTbAxicEbygHa3amJD02onbaOEfavLgrTCdH9sThVX3WII1pu170m9sE239I9RZpXtPXWHYRtsx9jZW1GzMIehCWY+blpSJt2d0aT9zPUeJAOoB3pk3EVLm+8lH1+RZ6rMLawwgEEQnWqI+Ld4rMGwB+CYpBxXaRc5jVJQOtvGRP81TTg0XvcmVX3BxWc8XUi+SUIbgZ1OMRX1lQk2oaaBem7RZvChI/tKCeMCZWMbeeRSjcITX1vuexlWcEM6M0PvzTYBHy5aPnIbHWTq4D44Bz61k7tUp0t8DEjP8YqAyuabjQH1PrLzLJ9bjsEbJKzYS9UrP0Rb9clFv3gC9EJUAEo3HiFt9ykpoNGSo/mKLMxgvFz+Lpa/wEes4n8nA2iwJhfFI2o6AgJWKctz5Cva2gjua5Rhc1lWfOMsBufqsMrDg2I9pZki/TjEuK0sd0EhkeKBZz19/3p5cWKQAiIpFauTQs3M3uBeeVWL1R/wJkejEGnhtaE/MYID440Z/6Vow3EblzIotJnXRLmCTV9PZKFEj7pHQGebvEdOXSwi+n17p6rA/qX8S3PCQ305apCflt4epTCRnrt7P/Cri+9AD+9Swsl6V9T/b5SvOMxDP46WD/Ytjfix7/fMMSCSvifa7UC5InHDEGZ/Ofn1m8P9ksIfdTskvG4bwR9oyip4/BjGMoxCVFaHvAkQvAEtB9FUtbT98lgOWYSFB0Sn4YHl3x5L8/KJobor+mh/fvqwcmGAlib4oMKehirwGOrEBHG1D4CPcZm1nIDRVu7KPCeUwWNwu+rWEvWMh50xSCIfE/tRpvj+pRJzsReQN5WGhS7sY35SmChrBpUaKOu0/j55V7ctOXsqEjJ+zJNuszpeIB905GuXTK7SsdAaDgZLrbnkWPAUPVFgg6aEek8M4MuxhfiQw/aumqkTUO7Df8jwpWfj5hCUbSpdBQdCQEq4IDrvoRLzhWD6t3b6x7Amn0pJnLDz07xYE9Vx/+iejxxT1&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250111T160936Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3EHT6UOU/20250111/us-east-1/s3/aws4_request&X-Amz-Signature=a0b2fb1f58ab75f57790024d5feb40e820b3454ee11768c4f65f32a7ccde9fef&hash=02e179cd6e1098fd1097eff6dc84d6b016e33ab3c34ab1f119cadc27f231435a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0024379596900063&tid=spdf-a92fd38b-45b8-4f91-b551-00542bdb45e4&sid=6d10f779656fa2417f8959d7089088b90132gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0e115952535456025f0058&rr=90062c0f7ad3b312&cc=tw">FSM跟代數理論</a>又有很多很好的結合。</li>
+</ul>
+<h1 id="資工系選修"><a href="#資工系選修" class="headerlink" title="資工系選修"></a>資工系選修</h1><h2 id="機器學習"><a href="#機器學習" class="headerlink" title="機器學習"></a>機器學習</h2><ul>
+<li><p>授課老師：林軒田</p>
+</li>
+<li><p>學分 ： 3 </p>
+</li>
+<li><p>甜度：6.5&#x2F;10</p>
+</li>
+<li><p>涼度 : 7&#x2F;10 </p>
+</li>
+<li><p>會不會再修 : 會</p>
+</li>
+<li><p>課本 : Learning from Data: A Short Course  by Yaser Abu-Mostafa </p>
+</li>
+<li><p>投影片：自製投影片+直播錄影(<strong>沒有剪輯且全英文</strong>，coursara上有中文剪輯版)</p>
+</li>
+<li><p>評分方式：</p>
+<ul>
+<li><p>hw score &#x3D; 1.5 * best homework[1-7] + 0.5 * worst homework[1-7] + other homework[1-7] + hw0</p>
+</li>
+<li><p>final score &#x3D; kaggle score + report score</p>
+</li>
+<li><p>raw score &#x3D; ceiling(hw score + final score)</p>
+</li>
+<li><p>Raw score is translated to a [0-100] translated score by the following table.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Translated</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&gt;&#x3D; 2200</td>
+<td>95</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 2015</td>
+<td>87</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1940</td>
+<td>82</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1840</td>
+<td>78</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1650</td>
+<td>75</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1575</td>
+<td>70</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1490</td>
+<td>68</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1420</td>
+<td>65</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 1320</td>
+<td>60</td>
+</tr>
+<tr>
+<td>&gt;&#x3D; 0</td>
+<td>50</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>修課心得:</p>
+</li>
+</ul>
+<h1 id="數學系必修"><a href="#數學系必修" class="headerlink" title="數學系必修"></a>數學系必修</h1><h2 id="線性代數"><a href="#線性代數" class="headerlink" title="線性代數"></a>線性代數</h2><ul>
+<li>授課老師：楊一帆</li>
+<li>學分 : 4</li>
+<li>甜度 : 7.5&#x2F;10</li>
+<li>涼度 : 9.8&#x2F;10 </li>
+<li>會不會再修 : 會</li>
+<li>課本 : Linear Algebra, 4th Edition by Stephen H. Friedberg (Author), Arnold J. Insel (Author), Lawrence E. Spence (Author)</li>
+<li>寫板書</li>
+<li>評分方式：<ul>
+<li>Homework（14次取最好的10次，各2 %） 20 %</li>
+<li>Quiz (2次) 20 % </li>
+<li>Midterm 30 % </li>
+<li>Final 30 %</li>
+</ul>
+</li>
+<li>修課心得：</li>
+</ul>
+<h2 id="代數導論"><a href="#代數導論" class="headerlink" title="代數導論"></a>代數導論</h2><ul>
+<li><p>授課老師 : 李庭諭</p>
+</li>
+<li><p>學分 : 4</p>
+</li>
+<li><p>甜度 : 8&#x2F;10 </p>
+</li>
+<li><p>涼度 : 5&#x2F;10 </p>
+</li>
+<li><p>會不會再修 : 會</p>
+</li>
+<li><p>課本 : </p>
+<ol>
+<li>Joseph H. Silverman, Abstract algebra</li>
+<li>Dummit and Foote, Abstract algebra</li>
+</ol>
+</li>
+<li><p>寫板書</p>
+</li>
+<li><p>評分方式 : </p>
+<ul>
+<li>真 Final :&#x3D; Final + 同樂會加分</li>
+<li>MAX( 真 Final , 真 Final * 0.5 + Midterm * 0.5 , 真 Final * 0.5 + Midterm * 0.3 + 作業總成績 )</li>
+<li><h3 id="等第下界（八捨九入到整數位）"><a href="#等第下界（八捨九入到整數位）" class="headerlink" title="等第下界（八捨九入到整數位）"></a>等第下界（八捨九入到整數位）</h3></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>等第</th>
+<th>下界（分）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A+</td>
+<td>119</td>
+</tr>
+<tr>
+<td>A</td>
+<td>97</td>
+</tr>
+<tr>
+<td>A-</td>
+<td>83</td>
+</tr>
+<tr>
+<td>B+</td>
+<td>76</td>
+</tr>
+<tr>
+<td>B</td>
+<td>67</td>
+</tr>
+<tr>
+<td>B-</td>
+<td>60</td>
+</tr>
+<tr>
+<td>C+</td>
+<td>55</td>
+</tr>
+<tr>
+<td>C</td>
+<td>51</td>
+</tr>
+<tr>
+<td>C-</td>
+<td>47</td>
+</tr>
+<tr>
+<td>F</td>
+<td>-∞</td>
+</tr>
+</tbody></table>
+<hr>
+<ul>
+<li><h3 id="C-卷-Final-總分等第下界"><a href="#C-卷-Final-總分等第下界" class="headerlink" title="C 卷 Final 總分等第下界"></a>C 卷 Final 總分等第下界</h3></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>等第</th>
+<th>下界（點）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C</td>
+<td>20</td>
+</tr>
+<tr>
+<td>C-</td>
+<td>14</td>
+</tr>
+<tr>
+<td>F</td>
+<td>-∞</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>修課心得：<br>  雖然這是一門數學系必修但很明顯能感受到外系的比例算挺高的，有一部分是來自於資工系(這學期有揪到科學班幫)，數學系比較優秀的同學也大多選擇去榮譽學程的代數，考量到我這學期的loading以及拿到比較高分的機率，思來想去最後還是選擇代數導論。這次教授不同於往年代數課，使用一本很新的書(Silverman)，Silverman的難度依章節循序的話就是大學部的難度，但這本書的缺點就是巨簡陋，很多重要概念就直接丟成exercise不講，感覺對做應用的人比較適合，教授因爲是大致遵從這本書進行教學，所以如group isomorphism theorem等多數應該要在課堂上講並熟練的證明就都沒講，需讀者自行修習。Silverman的第二個問題就是他的編排方式，他把Group, ring, field進行三階段的分割，所以學習上會特別跳，對初學者而言可能group的相關定理還沒學很多就直接進ring了，就都還沒有一個基本的idea就一直換主題，經過第一層之後這個情況才有改善。第三就是課本喜歡用炫技式的證明，例如Sylow theorem的後兩個part就要用Double coset做然後<strong>不會講movtivation</strong>, 提供很多不reusable或不general的定理(留到exercise), A_n 是simple給了快5頁的計算證明。這本書的採用也造成了使用 Dummit &amp; Foote到課程中後段就變成主要的基調，如Sylow theorem的application課本大概就是出成幾個習題，但Dummit &amp; Foote花了好幾頁去講example。<br>  前半學期的時候教授會勾選一些課本上的習題並進行分類，後半學期感覺出的習題都很隨便，就基礎的內容熟練度還沒練上來就會開始做一些進階的題目(其實也沒有多進階a.k.a Dummit &amp; Foote的題目)。助教陣容十分豪華，助教課前半學期回請同學上來講，後半學期就是直接助教講。每次都會出一些bonus，但很多bonus都需要用到的定理超出這次的範圍。校慶當天有同樂會，同樂會基本上就是出一些題目讓組隊同學上去練習，但他們爲了讓實力平均，因爲我和一些比較熟的同學期中考前六名所以分組上我們被拒絕成一組，我到期中開始就一直忙 (SP寫了一週)到期末就導致我根本沒空交新朋友，最後我就少了10分同樂會分數。基本上整學期都在靠我之前讀過的進度與紮實的基礎死撐着，到新進度的時候就明顯感覺到學到的東西很弱。我比較能夠接受的想法是，這門必修課本來就是需要課後花個15小時做題與看補充資料，那這樣的教學上的安排才會比較合理。<br>  考試內容上其實不太難，出的題目都算挺基本的(有鑑於是導論課)，只是上述的教學可能會導致初見殺的情況。助教批改上不太刁難，例如期中考的時候我考完覺得自己炸了，我內心的評分大概70&#x2F;120左右但我最後拿98&#x2F;120。助教十分幽默在考卷上都會緊跟時事與出一些笑話(包含ntu cool公告也是十分幽默)，作業批改上就比較嚴格，然後助教一樣也是使用留言的方式。<br>  我感覺開學以後我在這堂課上花的時間不算太多(時間不允許)，大多數都是寫作業題目，後續也因爲做作業疲乏從全部寫變成只選六題明顯沒有達到課後預想的修習時間，但我兩次期考的成績都不差，所以應該算是甜課。期末的時候我有想要不要下學期不要繼續修這門課，但好像同時段也沒有更好的選擇了。基本上代導算我loading最後爆開的主謀之一，所以我下學期希望能夠花多一點時間在代導。</p>
+</li>
+</ul>
+<h1 id="數學系選修"><a href="#數學系選修" class="headerlink" title="數學系選修"></a>數學系選修</h1><h2 id="偏微分方程一"><a href="#偏微分方程一" class="headerlink" title="偏微分方程一"></a>偏微分方程一</h2><ul>
+<li>授課老師：陳俊全</li>
+<li>學分 : 3 </li>
+<li>甜度 : 9&#x2F;10 </li>
+<li>涼度 : 7.5&#x2F;10 </li>
+<li>會不會再修 : 下輩子一定再修</li>
+<li>課本 : <ol>
+<li>L. Evans, Partial Differential Equations, 1998 AMS.</li>
+<li>F. John, Partial Differential Equations, 1982 Springer-Verlag New York Inc.</li>
+<li>D. Gilbarg and N. Trudinger, Elliptic Partial Differential Equations of Second Order, 2001 Springer-Verlag.</li>
+</ol>
+</li>
+<li>寫板書</li>
+<li>評分方式 : <ul>
+<li>Homework 25 % </li>
+<li>Midterm 35 %</li>
+<li>Final 40 %</li>
+</ul>
+</li>
+<li>修課心得 :<br>  之前我修過俊全老師的分析導論，特別贊同他的教學上寧可進度慢也不願意漏東西的理念，大部分修課的印象可能會覺得他教學進度緩慢且俊全式幹話特別多，但我覺得這樣的教學頻率比較適合我爆loading的學期，以後他開課我時間沒撞我一定會到。本學期教學進度如下:<ul>
+<li>1 Week Introduction to PDE</li>
+<li>2 Week Important PDE </li>
+<li>3-9 Week Laplace Equations</li>
+<li>8 Week Midterm</li>
+<li>10-14 Week Heat Equations</li>
+<li>15 Week Wave Equations</li>
+<li>16 Week Final<br>，課程並未如預期進入Non linear PDE，但教學紮實把每一個定理都講到位了，因爲是研究所課程基本上是假設會實分析。教授上課的時候會用他自己理解的方法教證明，但大體follow Evans PDE的內容，課程上不同於大學部的ODE&#x2F;PDE會專注在解方程，是比較接近分析的課程（我的興趣所在)。分析的部分並不會要求到非常深入的內容，但對基本的拓樸, uniform convergence, Lebesgue Dominated convergence theorem, ε-δ需要比較熟練。我自己高中時期就讀過walter strassen 的PDE，然後平常就有讀分析的愛好所以修起來還算輕鬆，一些functional Analysis跟實分析的概念上課會直接說明。作業上助教會從三本書出題，作業難度對一般大學部的同學應該算偏難，如果是研究生的水平應該會覺得很簡單，大概每兩週會有習題檢討。考試的話不會刁難，基本上都是從上課的定理跟作業題目出，可以自選題目不需要全答。助教的批改算很佛心，基本上邏輯正確，minor mistake是不會扣分。作業批改只要有交就會是100，助教會用cool留言區註解證明錯誤。這大概是我這學期最喜歡的課，我基本上每次去都可以學到很多很酷的東西 (Heat equation mean value property, etc)。每個主題有選擇看要探討的多深入，教授會用他的理解去詮釋很多定理並不會只有直觀證明，例如 : HHeat equation 的 Maximum prinicple爲什麼不是整個Parabolic cylinder, A’lambert equation 爲什麼會出現這個term, Green’s function爲什麼會這樣設計。總結就是，如果是程度中等沒有那麼多先備知識的會學得很開心，研究所的話要research level的實力可能不太適合。</li>
+</ul>
+</li>
+</ul>
+<h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1>]]></content>
+      <categories>
+        <category>Course Reflection</category>
+      </categories>
+  </entry>
 </search>
