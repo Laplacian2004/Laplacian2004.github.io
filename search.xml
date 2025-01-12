@@ -14,7 +14,7 @@
   </entry>
   <entry>
     <title>台大資工二上修課心得</title>
-    <url>/2025/01/11/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5%E4%BA%8C%E4%B8%8A%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</url>
+    <url>/2025/01/11/%E5%8F%B0%E5%A4%A7%E8%B3%87%E5%B7%A5%E5%A4%A7%E4%BA%8C%E4%B8%8A%E4%BF%AE%E8%AA%B2%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>這學期開始處理數學雙主修的學分，因此有一半的必修是數學系，一半是資工系。 這學期一共修8堂課，其中有6堂是必修，另外2堂是選修(偏微分方程一, 機器學習)。<br>說實話我自己都覺得有點瘋，在資工系都是追求GPA 4.3的風氣之下這種行爲近乎自殺。我會去選這些課的理由如下：(理由 1)</p>
 <ol>
 <li>我大一的時候有寫一個想要修的課的list，其中就包含：數學系線性代數, 抽象代數, 自動機 (被RZ蠱惑), 機器學習, PDE</li>
@@ -78,8 +78,8 @@
 <li>期末考: 30 %</li>
 </ul>
 </li>
-<li>修課心得 :<br>關於Thisway課堂教學的部分我無法給評價，我除了期中跟期末會出席之外沒來過一次。我大一下就是看鄭卜壬(a.k.a PJ)的2021的網課，我覺得PJ很好笑又有趣<br>，他會用很多荒謬的比喻讓你記起來，例如：政府會在你家開個房間然後放你的資料然後把門給鎖了，這種毫無道理的比喻，我挺喜歡的。而且從第一堂課的Os concept<br>就可以感受到PJ對課本內容的獨特理解，他對OS, 計概, Data structure, 計結的理解會綜合到枯燥的課程裏面。基本上自學課本就會覺得這本書就是一個百科大全（man page, API書)，所以很需要對OS的理解才有辦法學好。不同於很多人對這堂課的評價是一個背科，PJ想傳達的就是這是一個理解的科目，需要真實的理解才有辦法在自己寫code的情況下自己 identify 哪裡出現了deadlock或race condition。因爲我這學期同時修計網在做socket programming project更能瞭解爲啥需要這樣理解SP。兩班課程規劃大致cover:<ul>
-<li>Os concept</li>
+<li>修課心得 :<br>關於Thisway課堂教學的部分我無法給評價，我除了期中跟期末會出席之外沒來過一次。我大一下就是看鄭卜壬(a.k.a PJ)的2021的網課，我覺得PJ很好笑又有趣<br>，他會用很多荒謬的比喻讓你記起來，例如：政府會在你家開個房間然後放你的資料然後把門給鎖了，這種毫無道理的比喻，我挺喜歡的。而且從第一堂課的 OS Concept 就可以感受到PJ對課本內容的獨特理解，他對OS, 計概, Data structure, 計結的理解會綜合到枯燥的課程裏面。基本上自學課本就會覺得這本書就是一個百科大全（man page, API書)，所以很需要對OS的理解才有辦法學好。不同於很多人對這堂課的評價是一個背科，PJ想傳達的就是這是一個理解的科目，需要真實的理解才有辦法在自己寫code的情況下自己 identify 哪裡出現了deadlock或race condition。因爲我這學期同時修計網在做socket programming project更能瞭解爲啥需要這樣理解SP。兩班課程規劃大致cover:<ul>
+<li>OS concept</li>
 <li>Buffer and unbuffer I&#x2F;O </li>
 <li>File System</li>
 <li>Process concept&#x2F;control</li>
@@ -89,7 +89,7 @@
 <li><a href="https://hackmd.io/@Qb8FmlY1Tbu8vrNi5uQ1Dg/HytkthL3C">socket programming</a></li>
 <li><a href="https://hackmd.io/@rwGDMkdFT2m4A250yFDLPg/BJURLjchC">IPC</a></li>
 <li><a href="https://hackmd.io/@seantsao00/sp2024_hw3">Signal stimulate threading</a></li>
-<li><a href="https://hackmd.io/@kcwayne/sp2024_hw4#1224">Threading</a><br>難度的話我覺得 IPC&gt;socket programming&gt;Threading&gt;Signal stimulate threading。因爲三次放假所以Threading放在17週且內容上也比較少，但結果是我最後一次大意了沒有閃memory leak也被狂扣，我到寫CN socket programming phase 2才發現我寫法會有thread殺不乾淨的情況，但那時候已經截止了所以我作業沒拿滿。IPC哪次是一個喜歡Ina的助教出的，挺容易做IPC的方式不好導致TLE的，而且我被TA hour助教講的話搞到，他跟我講他的code大概只寫了100多行只要重複利用就可以讓code變乾淨，然後我就把一堆功能寫在一起然後就變得可讀性很差，而且通常題目敘述都超長，稍微哪裏理解有問題都有可能會火爆炸開。IPC我星期日開始寫下個禮拜星期二早上才在工作站上ccustom test全過，這導致我壓縮到其他的進度。Socket programming就是初見殺，因爲兩邊的老師都很有限度的教Socket API所以可能對TPC&#x2F;IP不是很理解的同學可能會有點困難，我大概寫了4個晚上左右。提個外話就是我programming不是很強，至少我認識不少同學是好幾個作業都之花一天就寫完了，所以時間參考參考就好w。只是不知名原因一到繳交日期附近新管就會塞滿一堆人趕作業，工作站\tmp2也會跑到I&#x2F;O超時會錯，要避免這個狀況最好修課的時候就有隊友或者你自己就是那個大腿(e.g.鄭XX, 謝X, 王X)。<strong>最好提早寫完開始做QA比較容易寫出正確的code</strong>。另外張迪善助教(喜歡Ina那個)真的對同學超好，有困難就會相助，有別於以往SP TA的評價都很糟糕。</li>
+<li><a href="https://hackmd.io/@kcwayne/sp2024_hw4#1224">Threading</a>.<br>難度的話我覺得 IPC&gt;socket programming&gt;Threading&gt;Signal stimulate threading。因爲三次放假所以Threading放在17週且內容上也比較少，但結果是我最後一次大意了沒有閃memory leak也被狂扣，我到寫CN socket programming phase 2才發現我寫法會有thread殺不乾淨的情況，但那時候已經截止了所以我作業沒拿滿。IPC哪次是一個喜歡Ina的助教出的，挺容易做IPC的方式不好導致TLE的，而且我被TA hour助教講的話搞到，他跟我講他的code大概只寫了100多行只要重複利用就可以讓code變乾淨，然後我就把一堆功能寫在一起然後就變得可讀性很差，而且通常題目敘述都超長，稍微哪裏理解有問題都有可能會火爆炸開。IPC我星期日開始寫下個禮拜星期二早上才在工作站上ccustom test全過，這導致我壓縮到其他的進度。Socket programming就是初見殺，因爲兩邊的老師都很有限度的教Socket API所以可能對TPC&#x2F;IP不是很理解的同學可能會有點困難，我大概寫了4個晚上左右。提個外話就是我programming不是很強，至少我認識不少同學是好幾個作業都之花一天就寫完了，所以時間參考參考就好w。只是不知名原因一到繳交日期附近新管就會塞滿一堆人趕作業，工作站\tmp2也會跑到I&#x2F;O超時會錯，要避免這個狀況最好修課的時候就有隊友或者你自己就是那個大腿(e.g.鄭XX, 謝X, 王X)。<strong>最好提早寫完開始做QA比較容易寫出正確的code</strong>。另外張迪善助教(喜歡Ina那個)真的對同學超好，有困難就會相助，有別於以往SP TA的評價都很糟糕。</li>
 </ul>
 </li>
 </ul>
@@ -112,10 +112,10 @@
 <li>第三次定期考: 33.3 %</li>
 </ul>
 </li>
-<li>修課心得: (尚未公佈成績 XD)</li>
+<li>修課心得:<br>  這堂課是資工系二年級的必修課，是繼資料結構與演算法後第二個演算法課。今年這堂課兩個班，單班是黃尚恩，雙班是呂學一，其實以前系上開課的時候都會是非演算法專業的老師來教這門課，但今年來的新教授黃尚恩本身是演算法專業的，所以大概之後都會是這兩位具有演算法專業的老師來教。呂學一教授的教學基本上完全follow他的投影片內容，他的投影片會有很多AI生成的圖，然後上課的感覺更接近演講。教授前期上課喜歡遞麥克風給同學做問答，整體學生與教授氣氛挺好的，但後半學期因爲3次的停課，所以後期都是他一個人在趕課。今年因爲是第二次授課，所以考古題只有一份且今年規定<strong>不行外流</strong>，投影片因爲基本上全由教授自製有不少錯誤。呂學一的投影片具有大量的個人風格，因爲上課不錄影所以自己讀會有很高的機率自己讀不懂，內容上也有很多自創的名詞(老大問題, 左右護法)，且更像是通識課會教很多演算法界的人物, 歷史或前沿研究的簡介。整堂課是一個理論課所以不太有機會寫程式，基本上考試寫的程式都是pesudo code。考試會更著重演算法的證明，需要寫的程式題都需要給formal的Time complexity或正確性的proof (是指資工系的formal而非數學系的formal ：D)，有code的題目也大多是Leetcode medimum的難度，考試時間挺吃緊的基本上都是奮筆急書因爲大多數的題目都需要給證明，所以其實挺難的。今年助教十分雷，學期中的時候教授發現聯絡不到助教，於是才緊急開招批改助教，到停修截止前期考出來的成績也只有第一次定期考。今年助教不會像去年一樣好撈分，基本上regrade的都很難要到分數，但因爲成績出的慢就一直處於一個很混沌的狀態。我個人感覺其實這堂課的定位十分奇怪，他既不能學習到以後面試會用到的解題能力，另一方面在理論上又不夠嚴謹與完整，總的來說就是學了一個寂寞。黃班基本上就會是比照數學系那樣出作業，根據修課同學的說法，作業難度挺高的，同時具有證明題與coding題，不太適合修太多學分。所以跟呂學一相比大概只能兩害取其輕，如果是期待比較紮實的學習的話會建議去黃班，然後有一定基礎的人 (a.k.a 高中競程人) 去呂班會比較吃香。</li>
 </ul>
 <h2 id="計算機網路"><a href="#計算機網路" class="headerlink" title="計算機網路"></a>計算機網路</h2><ul>
-<li>授課老師：周承覆</li>
+<li>授課老師：周承復</li>
 <li>學分 : 3 </li>
 <li>甜度 : 9.8&#x2F;10 </li>
 <li>涼度 ： 5&#x2F;10 </li>
@@ -130,7 +130,7 @@
 <li>Class participation : 5 %</li>
 </ul>
 </li>
-<li>修課心得 :<br>  我個人感覺單班計網是大甜課，周承覆教授看起來就像公園很有精神的阿北，上課基本上follow課本作者Jim Kurose的簡報，所以可能教學上有些無聊，教師說話上時常重複說<a href="/img/repeatedly.png">某句話</a>，有鑑於我這學期的loading我後半學期就選擇看Jim Kurose的課。他的課程算是挺知名的<a href="https://www.youtube.com/playlist?list=PLm556dMNleHc1MWN5BX9B2XkwkNE2Djiu">網課</a>，他也有上過<a href="https://www.youtube.com/watch?v=0EqKnvzo3no&t=298s">Wired</a>教小朋友，所以算是挺知名的人物吧。教授會自己補充Banyan Networking還有TCP throughput formula，基本上有寫考古一定會寫到。由於現在壓縮成16週基本上教不到Link layer，然後學期前面可能教授比較沒有進度壓力，教學進度大致如下:<ul>
+<li>修課心得 :<br>  我個人感覺單班計網是大甜課，周承復教授看起來就像公園很有精神的阿北，上課基本上follow課本作者Jim Kurose的簡報，所以可能教學上有些無聊，教師說話上時常重複說<a href="/img/repeatedly.png">某句話</a>，有鑑於我這學期的loading我後半學期就選擇看Jim Kurose的課。他的課程算是挺知名的<a href="https://www.youtube.com/playlist?list=PLm556dMNleHc1MWN5BX9B2XkwkNE2Djiu">網課</a>，他也有上過<a href="https://www.youtube.com/watch?v=0EqKnvzo3no&t=298s">Wired</a>教小朋友，所以算是挺知名的人物吧。教授會自己補充Banyan Networking還有TCP throughput formula，基本上有寫考古一定會寫到。由於現在壓縮成16週基本上教不到Link layer，然後學期前面可能教授比較沒有進度壓力，教學進度大致如下:<ul>
 <li>1-5 week chap 1&#x2F; Paper reading</li>
 <li>6-7 week chap 2&#x2F; Hw1 </li>
 <li>8 week Midterm</li>
@@ -160,7 +160,7 @@
 <li>第三次定期考: 40 %</li>
 </ul>
 </li>
-<li>修課心得:<br>  我會修這門課除了被蠱惑之外，上學期我修林中緯的DSDL (非常好課)被Finite state machine深深吸引所以想修他的班，眾所皆知林忠緯的教學在資工系是S tier，加上DSDL擁有影片剪輯與完全不用到課堂的設計，既甜又香。自動機不同於DSDL是<strong>會切等地</strong>的課，而且由於這是林忠緯第二次教這門課，並沒有像DSDL一樣多的考古，加上林忠緯的考題常常出現一些小XX的題目 (例如：1不能一個set, Alphabet 要是finite之類的(課本寫在序章)) 所以其實並有沒特別友善。由於林忠緯不是自動機專業的，他無法提供很多計算理論的概念跟考很酷的數學題，必須要多做課本習題才能夠學到。本課程全部由英文授課，雖然教授曾經在Berkley當過TA，但他英文並不到十分流利，第二年教學有明顯感受到老師的口說有進步。教授的考卷前半部分基本上就是很基礎（基礎不見得簡單）的題目，然後最後兩題會比較難 (a.k.a 防破臺題)。大多數修課同學都看錄好的影片，會比較有效率，且因爲沒花什麼時間停修成本也不大。我在DSDL的時候就對FSM特別感興趣，知道自動機是用這麼mathematical的方式更是，在學習的過程中我覺得林忠緯較少說明那些mathematical object的意義，不是因爲這些理論沒有實際的application，是因爲他沒有傳遞這些東西的感動。當我在其他參考書學到Turing machine 是 undecidable的停機問題的時候，我覺得感受到的是驚喜與感動，因爲他用意想不到的方式解釋了哥德爾不完備定理。我覺得只有真正理解計算理論的人才有辦法講出爲什麼他重要，所以很大程度課本跟教授把這些解釋權 (直觀) 留給聽&#x2F;讀者。表面上這堂課使用着正規的數學符號，然而證明都寫的十分不嚴謹，且由於16週的關係有許多章節是沒有教的，是故無法提供一個很完整的教學。第一堂課教授就講了這是校友投票最無用的課程之一，其實對大多數成爲軟體工程的同學，這課就是刷GPA的課。所以這門課其實開在系上當選修或和數學系一起合開其實是更好的，就像數學家John Conway也發表了許多計算理論的文章，或者<a href="https://pdf.sciencedirectassets.com/271586/1-s2.0-S0024379500X03989/1-s2.0-S0024379596900063/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj//////////wEaCXVzLWVhc3QtMSJHMEUCIFY57CBdoGFPteIa3sPH0cPRFUsnKdSMsGtrIPypoIddAiEAwfIjBXqhc865SSVGBjyeyrq8Rh85PUEty6U6ziYJQZwqvAUIwf//////////ARAFGgwwNTkwMDM1NDY4NjUiDLLh5/sBO/qrbJ+C6CqQBQMKwtScFeo281DpBV0eIIyrn7d6/qhDbc8BtelCuf4HYyjMGNnk6qIwHBXfTKenoDVNoAmowT8IbCMwQ2D7rpw9OeflYJ6QOleWd+V5xJOOH7NTOH53NCCvEJTbAxicEbygHa3amJD02onbaOEfavLgrTCdH9sThVX3WII1pu170m9sE239I9RZpXtPXWHYRtsx9jZW1GzMIehCWY+blpSJt2d0aT9zPUeJAOoB3pk3EVLm+8lH1+RZ6rMLawwgEEQnWqI+Ld4rMGwB+CYpBxXaRc5jVJQOtvGRP81TTg0XvcmVX3BxWc8XUi+SUIbgZ1OMRX1lQk2oaaBem7RZvChI/tKCeMCZWMbeeRSjcITX1vuexlWcEM6M0PvzTYBHy5aPnIbHWTq4D44Bz61k7tUp0t8DEjP8YqAyuabjQH1PrLzLJ9bjsEbJKzYS9UrP0Rb9clFv3gC9EJUAEo3HiFt9ykpoNGSo/mKLMxgvFz+Lpa/wEes4n8nA2iwJhfFI2o6AgJWKctz5Cva2gjua5Rhc1lWfOMsBufqsMrDg2I9pZki/TjEuK0sd0EhkeKBZz19/3p5cWKQAiIpFauTQs3M3uBeeVWL1R/wJkejEGnhtaE/MYID440Z/6Vow3EblzIotJnXRLmCTV9PZKFEj7pHQGebvEdOXSwi+n17p6rA/qX8S3PCQ305apCflt4epTCRnrt7P/Cri+9AD+9Swsl6V9T/b5SvOMxDP46WD/Ytjfix7/fMMSCSvifa7UC5InHDEGZ/Ofn1m8P9ksIfdTskvG4bwR9oyip4/BjGMoxCVFaHvAkQvAEtB9FUtbT98lgOWYSFB0Sn4YHl3x5L8/KJobor+mh/fvqwcmGAlib4oMKehirwGOrEBHG1D4CPcZm1nIDRVu7KPCeUwWNwu+rWEvWMh50xSCIfE/tRpvj+pRJzsReQN5WGhS7sY35SmChrBpUaKOu0/j55V7ctOXsqEjJ+zJNuszpeIB905GuXTK7SsdAaDgZLrbnkWPAUPVFgg6aEek8M4MuxhfiQw/aumqkTUO7Df8jwpWfj5hCUbSpdBQdCQEq4IDrvoRLzhWD6t3b6x7Amn0pJnLDz07xYE9Vx/+iejxxT1&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250111T160936Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3EHT6UOU/20250111/us-east-1/s3/aws4_request&X-Amz-Signature=a0b2fb1f58ab75f57790024d5feb40e820b3454ee11768c4f65f32a7ccde9fef&hash=02e179cd6e1098fd1097eff6dc84d6b016e33ab3c34ab1f119cadc27f231435a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0024379596900063&tid=spdf-a92fd38b-45b8-4f91-b551-00542bdb45e4&sid=6d10f779656fa2417f8959d7089088b90132gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0e115952535456025f0058&rr=90062c0f7ad3b312&cc=tw">FSM跟代數理論</a>又有很多很好的結合。</li>
+<li>修課心得:<br>  我會修這門課除了被蠱惑之外，上學期我修林中緯的DSDL (非常好課)被Finite state machine深深吸引所以想修他的班，眾所皆知林忠緯的教學在資工系是S tier，加上DSDL擁有影片剪輯與完全不用到課堂的設計，既甜又香。自動機不同於DSDL是<strong>會切等地</strong>的課，而且由於這是林忠緯第二次教這門課，並沒有像DSDL一樣多的考古，加上林忠緯的考題常常出現一些小XX的題目 (例如：1不能一個set, Alphabet 要是finite之類的(課本寫在序章)) 所以其實並有沒特別友善。由於林忠緯不是自動機專業的，他無法提供很多計算理論的概念跟考很酷的數學題，必須要多做課本習題才能夠學到。本課程全部由英文授課，雖然教授曾經在Berkley當過TA，但他英文並不到十分流利，第二年教學有明顯感受到老師的口說有進步。教授的考卷前半部分基本上就是很基礎（基礎不見得簡單）的題目，然後最後兩題會比較難 (a.k.a 防破臺題)。大多數修課同學都看錄好的影片，會比較有效率，且因爲沒花什麼時間停修成本也不大。我在DSDL的時候就對FSM特別感興趣，知道自動機是用這麼mathematical的方式更是，在學習的過程中我覺得林忠緯較少說明那些mathematical object的意義，不是因爲這些理論沒有實際的application，是因爲他沒有傳遞這些東西的感動。當我在其他參考書學到Turing machine 是 undecidable的停機問題的時候，我覺得感受到的是驚喜與感動，因爲他用意想不到的方式解釋了哥德爾不完備定理。我覺得只有真正理解計算理論的人才有辦法講出爲什麼他重要，所以很大程度課本跟教授把這些解釋權 (直觀) 留給聽&#x2F;讀者。表面上這堂課使用着正規的數學符號，然而證明都寫的十分不嚴謹，且由於16週的關係有許多章節是沒有教的，是故無法提供一個很完整的教學。第一堂課教授就講了這是校友投票最無用的課程之一，其實對大多數成爲軟體工程的同學，這課就是刷GPA的課。所以這門課其實開在系上當選修或和數學系一起合開其實是更好的，就像數學家John Conway也發表了許多計算理論的文章，或者<a href="https://pdf.sciencedirectassets.com/271586/1-s2.0-S0024379500X03989/1-s2.0-S0024379596900063/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj//////////wEaCXVzLWVhc3QtMSJHMEUCIFY57CBdoGFPteIa3sPH0cPRFUsnKdSMsGtrIPypoIddAiEAwfIjBXqhc865SSVGBjyeyrq8Rh85PUEty6U6ziYJQZwqvAUIwf//////////ARAFGgwwNTkwMDM1NDY4NjUiDLLh5/sBO/qrbJ+C6CqQBQMKwtScFeo281DpBV0eIIyrn7d6/qhDbc8BtelCuf4HYyjMGNnk6qIwHBXfTKenoDVNoAmowT8IbCMwQ2D7rpw9OeflYJ6QOleWd+V5xJOOH7NTOH53NCCvEJTbAxicEbygHa3amJD02onbaOEfavLgrTCdH9sThVX3WII1pu170m9sE239I9RZpXtPXWHYRtsx9jZW1GzMIehCWY+blpSJt2d0aT9zPUeJAOoB3pk3EVLm+8lH1+RZ6rMLawwgEEQnWqI+Ld4rMGwB+CYpBxXaRc5jVJQOtvGRP81TTg0XvcmVX3BxWc8XUi+SUIbgZ1OMRX1lQk2oaaBem7RZvChI/tKCeMCZWMbeeRSjcITX1vuexlWcEM6M0PvzTYBHy5aPnIbHWTq4D44Bz61k7tUp0t8DEjP8YqAyuabjQH1PrLzLJ9bjsEbJKzYS9UrP0Rb9clFv3gC9EJUAEo3HiFt9ykpoNGSo/mKLMxgvFz+Lpa/wEes4n8nA2iwJhfFI2o6AgJWKctz5Cva2gjua5Rhc1lWfOMsBufqsMrDg2I9pZki/TjEuK0sd0EhkeKBZz19/3p5cWKQAiIpFauTQs3M3uBeeVWL1R/wJkejEGnhtaE/MYID440Z/6Vow3EblzIotJnXRLmCTV9PZKFEj7pHQGebvEdOXSwi+n17p6rA/qX8S3PCQ305apCflt4epTCRnrt7P/Cri+9AD+9Swsl6V9T/b5SvOMxDP46WD/Ytjfix7/fMMSCSvifa7UC5InHDEGZ/Ofn1m8P9ksIfdTskvG4bwR9oyip4/BjGMoxCVFaHvAkQvAEtB9FUtbT98lgOWYSFB0Sn4YHl3x5L8/KJobor+mh/fvqwcmGAlib4oMKehirwGOrEBHG1D4CPcZm1nIDRVu7KPCeUwWNwu+rWEvWMh50xSCIfE/tRpvj+pRJzsReQN5WGhS7sY35SmChrBpUaKOu0/j55V7ctOXsqEjJ+zJNuszpeIB905GuXTK7SsdAaDgZLrbnkWPAUPVFgg6aEek8M4MuxhfiQw/aumqkTUO7Df8jwpWfj5hCUbSpdBQdCQEq4IDrvoRLzhWD6t3b6x7Amn0pJnLDz07xYE9Vx/+iejxxT1&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250111T160936Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY3EHT6UOU/20250111/us-east-1/s3/aws4_request&X-Amz-Signature=a0b2fb1f58ab75f57790024d5feb40e820b3454ee11768c4f65f32a7ccde9fef&hash=02e179cd6e1098fd1097eff6dc84d6b016e33ab3c34ab1f119cadc27f231435a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0024379596900063&tid=spdf-a92fd38b-45b8-4f91-b551-00542bdb45e4&sid=6d10f779656fa2417f8959d7089088b90132gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0e115952535456025f0058&rr=90062c0f7ad3b312&cc=tw">FSM跟代數理論</a>又有很多很好的結合。<br>  結論就是從來一次我可能會選林智仁班，雖然哪邊比較難一點，但考得內容也比較經典算是比較predictable (考古題充裕)。我前兩次期考都因爲state minimization的問題寫到最後一刻，因爲需要state minimization通常不會給需要minize到什麼地步所以考試的時候會對自己的答案陷入懷疑。而且減少state時常需要冒有可能設計出來出來的Turing machine或Finite state machine是錯的風險，因此林忠緯的班平均不會太差(前幾題都挺簡單)，但如果有志要拿A+就會相對困難。</li>
 </ul>
 <h1 id="資工系選修"><a href="#資工系選修" class="headerlink" title="資工系選修"></a>資工系選修</h1><h2 id="機器學習"><a href="#機器學習" class="headerlink" title="機器學習"></a>機器學習</h2><ul>
 <li><p>授課老師：林軒田</p>
@@ -237,7 +237,7 @@
 </tr>
 </tbody></table>
 </li>
-<li><p>修課心得:</p>
+<li><p>修課心得: (暫時不想寫)</p>
 </li>
 </ul>
 <h1 id="數學系必修"><a href="#數學系必修" class="headerlink" title="數學系必修"></a>數學系必修</h1><h2 id="線性代數"><a href="#線性代數" class="headerlink" title="線性代數"></a>線性代數</h2><ul>
@@ -246,7 +246,7 @@
 <li>甜度 : 7.5&#x2F;10</li>
 <li>涼度 : 9.8&#x2F;10 </li>
 <li>會不會再修 : 會</li>
-<li>課本 : Linear Algebra, 4th Edition by Stephen H. Friedberg (Author), Arnold J. Insel (Author), Lawrence E. Spence (Author)</li>
+<li>課本 : Linear Algebra, 4th Edition by Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence</li>
 <li>寫板書</li>
 <li>評分方式：<ul>
 <li>Homework（14次取最好的10次，各2 %） 20 %</li>
@@ -255,7 +255,24 @@
 <li>Final 30 %</li>
 </ul>
 </li>
-<li>修課心得：</li>
+<li>修課心得：<br>  由於大一時旁聽線性代數導論，蔡國榮教授的優質教學所打下的基礎，在線性代數上我有充足的認識。高一時就完整看完Gilbert Strang的線性代數，加上高二高三的兩次選修課，已經具備相當工程線代的基礎，所以在線性代數方面我基本上就是去補學分的。我基本上只有去小考, 期考跟交作業的時間，所以這堂課的loading就只有作業跟準備期考。在這次的課程進行中我也有機會把之前沒有那麼注重的細節給學好，由於這學期同時修代數，主題如 :<ol>
+<li>Quotient Space </li>
+<li>用Symmetric group 解釋的 Determinant</li>
+<li>Rational Jordan form<br>相比以前閱讀 Hoffman 很多不太清楚，這次在理解上有更深入的理解。由於教授使用Friedberg且教學上寫板書，整體進度上感覺比有打好講義的線性代數導論的進度慢，課程是比較傳統的數學系的課。作業會在每週星期五公佈然後隔週的星期三會收，作業基本上就是Friedberg後面給的習題，算是難度適中然後可以補充或推廣一些好用的定理，助教選題上都會把概念點到，不會像代導有那種很偏的作業。助教批改算是挺嚴格的，他會糾正我的latex語法然後會留一些有趣的comments，但給分算大方基本上minor mistake常常就給2或1.5，而且作業就是取最好的10次所以不太刁難。每次作業都會有Bouns，Bouns可以學到很多不管是比較偏代數或難度比較高的題目，我基本上前半學期每次都有把Bouns寫滿。線代的助教陣容極爲豪華，有吳尚昱, 許哲瑋等數學系大佬，基本上問他們問題就可以學到很多，但週五早上我後來都在睡覺沒什麼去TA hours，下學期應該會多花一點時間去跟他們學習。小考基本上不太難都是作業或定理的基本題，我甚至感覺線代導的小考都比較難。關於期考，我不確定是初見殺還是怎樣期中考的分數如下 :</li>
+</ol>
+<ul>
+<li>平均 : 49.32 </li>
+<li>標準差 : 28.05</li>
+<li>第一四分位數 : 25 </li>
+<li>中位數 : 46 </li>
+<li>第三四分位數 : 73<br>我期中考成績是98&#x2F;100，然後期末考感覺就有好一點，或許是大部分的題目比較簡單，分數如下 : </li>
+<li>平均 : 80.60</li>
+<li>標準差 : 24.41 </li>
+<li>第一四分位數 : 65 </li>
+<li>中位數 : 84 </li>
+<li>第三四分位數 : 100.5<br>我期末考成績是100&#x2F;120。所以整體而言期考沒有特別難，比較要注意的是學期成績是<strong>按照比例去切</strong>，並不會按照登錄在ntu cool上面的成績進行等級。</li>
+</ul>
+</li>
 </ul>
 <h2 id="代數導論"><a href="#代數導論" class="headerlink" title="代數導論"></a>代數導論</h2><ul>
 <li><p>授課老師 : 李庭諭</p>
@@ -280,7 +297,7 @@
 <ul>
 <li>真 Final :&#x3D; Final + 同樂會加分</li>
 <li>MAX( 真 Final , 真 Final * 0.5 + Midterm * 0.5 , 真 Final * 0.5 + Midterm * 0.3 + 作業總成績 )</li>
-<li><h3 id="等第下界（八捨九入到整數位）"><a href="#等第下界（八捨九入到整數位）" class="headerlink" title="等第下界（八捨九入到整數位）"></a>等第下界（八捨九入到整數位）</h3></li>
+<li>等第下界（八捨九入到整數位）</li>
 </ul>
 <table>
 <thead>
@@ -332,7 +349,7 @@
 </tbody></table>
 <hr>
 <ul>
-<li><h3 id="C-卷-Final-總分等第下界"><a href="#C-卷-Final-總分等第下界" class="headerlink" title="C 卷 Final 總分等第下界"></a>C 卷 Final 總分等第下界</h3></li>
+<li>C 卷 Final 總分等第下界</li>
 </ul>
 <table>
 <thead>
@@ -384,10 +401,11 @@
 <li>8 Week Midterm</li>
 <li>10-14 Week Heat Equations</li>
 <li>15 Week Wave Equations</li>
-<li>16 Week Final<br>，課程並未如預期進入Non linear PDE，但教學紮實把每一個定理都講到位了，因爲是研究所課程基本上是假設會實分析。教授上課的時候會用他自己理解的方法教證明，但大體follow Evans PDE的內容，課程上不同於大學部的ODE&#x2F;PDE會專注在解方程，是比較接近分析的課程（我的興趣所在)。分析的部分並不會要求到非常深入的內容，但對基本的拓樸, uniform convergence, Lebesgue Dominated convergence theorem, ε-δ需要比較熟練。我自己高中時期就讀過walter strassen 的PDE，然後平常就有讀分析的愛好所以修起來還算輕鬆，一些functional Analysis跟實分析的概念上課會直接說明。作業上助教會從三本書出題，作業難度對一般大學部的同學應該算偏難，如果是研究生的水平應該會覺得很簡單，大概每兩週會有習題檢討。考試的話不會刁難，基本上都是從上課的定理跟作業題目出，可以自選題目不需要全答。助教的批改算很佛心，基本上邏輯正確，minor mistake是不會扣分。作業批改只要有交就會是100，助教會用cool留言區註解證明錯誤。這大概是我這學期最喜歡的課，我基本上每次去都可以學到很多很酷的東西 (Heat equation mean value property, etc)。每個主題有選擇看要探討的多深入，教授會用他的理解去詮釋很多定理並不會只有直觀證明，例如 : HHeat equation 的 Maximum prinicple爲什麼不是整個Parabolic cylinder, A’lambert equation 爲什麼會出現這個term, Green’s function爲什麼會這樣設計。總結就是，如果是程度中等沒有那麼多先備知識的會學得很開心，研究所的話要research level的實力可能不太適合。</li>
+<li>16 Week Final</li>
 </ul>
 </li>
 </ul>
+<p>課程並未如預期進入Non linear PDE，但教學紮實把每一個定理都講到位了，因爲是研究所課程基本上是假設會實分析。教授上課的時候會用他自己理解的方法教證明，但大體follow Evans PDE的內容，課程上不同於大學部的ODE&#x2F;PDE會專注在解方程，是比較接近分析的課程（我的興趣所在)。分析的部分並不會要求到非常深入的內容，但對基本的拓樸, uniform convergence, Lebesgue Dominated convergence theorem, ε-δ需要比較熟練。我自己高中時期就讀過walter strassen 的PDE，然後平常就有讀分析的愛好所以修起來還算輕鬆，一些functional Analysis跟實分析的概念上課會直接說明。作業上助教會從三本書出題，作業難度對一般大學部的同學應該算偏難，如果是研究生的水平應該會覺得很簡單，大概每兩週會有習題檢討。考試的話不會刁難，基本上都是從上課的定理跟作業題目出，可以自選題目不需要全答。助教的批改算很佛心，基本上邏輯正確，minor mistake是不會扣分。作業批改只要有交就會是100，助教會用cool留言區註解證明錯誤。這大概是我這學期最喜歡的課，我基本上每次去都可以學到很多很酷的東西 (Heat equation mean value property, etc)。每個主題有選擇看要探討的多深入，教授會用他的理解去詮釋很多定理並不會只有直觀證明，例如 : Heat equation 的 Maximum prinicple爲什麼不是整個Parabolic cylinder, A’lambert equation 爲什麼會出現這個term, Green’s function爲什麼會這樣設計。總結就是，如果是程度中等沒有那麼多先備知識的會學得很開心，研究所的話要research level的實力可能不太適合。</p>
 <h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1>]]></content>
       <categories>
         <category>Course Reflection</category>
